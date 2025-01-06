@@ -4,6 +4,7 @@ using AspDotNetCoreEmpty.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AspDotNetCoreEmpty.Migrations
 {
     [DbContext(typeof(BethanysPieShopDbContext))]
-    partial class BethanysPieShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250106125111_SecondCourse")]
+    partial class SecondCourse
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
