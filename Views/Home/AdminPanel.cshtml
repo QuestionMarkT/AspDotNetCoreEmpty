@@ -1,0 +1,49 @@
+﻿<a asp-action="Index"
+   asp-controller="Pie">View all</a>
+<br/>
+<a asp-action="IndexPaging"
+   asp-controller="Pie">View all paged</a>
+<br/>
+<a asp-action="IndexPagingSorting"
+   asp-controller="Pie">View all paged and sorted</a>
+<br/>
+<a asp-controller="Pie"
+   asp-action="Search">Search pies</a>
+<br/>
+<a asp-controller="Pie"
+   asp-action="Add">Add new pie</a>
+<br/>
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           data-toggle="dropdown"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown"
+           id="nav-dropdown"
+           aria-expanded="false">
+            Categories
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="nav-dropdown">
+            <li>
+                <a class="dropdown-item"
+                    asp-controller="Category"
+                    asp-action="Index">View all
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item"
+                    asp-controller="Category"
+                    asp-action="BulkEdit">Bulk edit
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link"
+            asp-controller="Order"
+            asp-action="Index">Orders
+        </a>
+    </li>
+</ul>
