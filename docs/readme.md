@@ -4,3 +4,7 @@
 - [x] ASP.NET Core
 - [x] Web API
 - [ ] Blazor
+
+> [!WARNING]
+> There's nothing meaningful in this repo
+Thanks.
