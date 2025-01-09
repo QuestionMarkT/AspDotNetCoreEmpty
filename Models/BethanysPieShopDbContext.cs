@@ -27,17 +27,17 @@ public class BethanysPieShopDbContext(DbContextOptions<BethanysPieShopDbContext>
         builder
             .Entity<Order>()
             .Property(e => e.OrderTotal)
-            .HasPrecision(18, 2);
+            .HasPrecision(16, 2);
 
         builder
             .Entity<OrderDetail>()
             .Property(e => e.Price)
-            .HasPrecision(18, 2);
+            .HasPrecision(16, 2);
 
         builder
             .Entity<Pie>()
             .Property(e => e.Price)
-            .HasPrecision(18, 2);
+            .HasPrecision(16, 2);
 
         base.OnModelCreating(builder);
     }
