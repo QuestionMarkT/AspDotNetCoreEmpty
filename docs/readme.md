@@ -1,3 +1,5 @@
+<img src="https://www.pluralsight.com/content/dam/pluralsight2/logos/2022/ps/mark/PS-mark-color-fill.png" width="64"/>
+
 ## Playground repository
 ### I use this repository to learn ASP.NET Core using Pluralsight courses
 
