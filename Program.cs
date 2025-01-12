@@ -14,12 +14,25 @@ global using System.Linq;
 using AspDotNetCoreEmpty.Models;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Identity;
-
 namespace AspDotNetCoreEmpty;
 
 public class Program
 {
     const string conStr = "ConnectionStrings:BethanysPieShopDbContextConnection";
+
+    [Obsolete("Just don't use it")]
+    static void DumbTestsArea()
+    {
+        Dictionary<string, float> studentsHeights= new()
+        {
+            ["Stephen"] = 183,
+            ["Jennifer"] = 159,
+            ["Susanne"] = 165,
+            ["Joe"] = 160
+        };
+        
+        throw new ExecutionEngineException("This is a playground method, don't use it");
+    }
 
     public static void Main(string[] args)
     {
